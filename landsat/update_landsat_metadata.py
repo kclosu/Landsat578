@@ -21,7 +21,7 @@ from zipfile import ZipFile
 from numpy import unique
 from datetime import datetime
 from dask.dataframe import read_csv
-from pandas.io.common import EmptyDataError
+from pandas.errors import EmptyDataError
 from requests import get
 
 LANDSAT_METADATA_URL = 'http://storage.googleapis.com/gcp-public-data-landsat/index.csv.gz'
